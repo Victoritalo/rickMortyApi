@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400&display=swap");
+:root {
+  --primary-text: #202329;
+  --text: #ffffff;
+  --textTwo: #9e9e98;
+  --textHover: #ff9800;
+  --bg: #272b33;
+  --bgchar: #3c3e44;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  /* width: 100vw; */
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.siteHeader img {
+  width: 80px;
+  transform: scaleX(-1);
+}
+.siteHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--text);
+  padding: 10px;
+  font-size: 22px;
+}
+.siteHeader a {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text);
+  text-decoration: none;
+  padding: 5px;
+  border-bottom: 2px solid var(--textHover);
+  transition: 0.3s;
+}
+.siteHeader a:hover {
+  color: var(--textHover);
+  border-bottom: 2px solid var(--primary-text);
+  fill: red;
+}
+.logoRickMorty {
+  text-align: center;
+}
+
+.container {
+  /* width: 100%; */
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container p {
+  margin: 10px;
+}
+.character img {
+  width: 220px;
+  border-radius: 20px 0px 0px 20px;
+}
+.character {
+  width: 520px;
+  background-color: var(--bgchar);
+  display: flex;
+  align-content: center;
+  margin: 10px;
+  color: var(--text);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.character h2 {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 8px;
+}
+.status {
+  display: flex;
+  align-items: center;
+}
+.statusView {
+  margin-left: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.known_seen {
+  color: var(--textTwo);
+}
+
+.btn {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  padding: 15px;
+  gap: 10px;
+}
+
+.btn button {
+  font-weight: bold;
+  padding: 1em;
+  border-radius: 50%;
+  border: none;
+  background-color: #4eb5f1;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  transform: scale(1.1);
+  color: var(--textHover);
+}
+
+footer {
+  color: var(--textTwo);
+  background-color: var(--bgchar);
+  padding: 35px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--textTwo);
+  transition: 0.4s;
+}
+footer a:hover {
+  color: var(--textHover);
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .logoRickMorty{
+    display: none;
+  }
+}

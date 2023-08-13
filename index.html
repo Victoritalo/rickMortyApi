@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/4d50fc5e66.js" crossorigin="anonymous"></script>
+    <title>Rick & Morty API</title>
+  </head>
+  <body>
+    <header class="siteHeader">
+      <a href="#" style="border: none">
+        <img
+          src="https://t4.ftcdn.net/jpg/05/19/70/81/360_F_519708159_DsoIN3KqstTSQZXkNcUNu4ZYb3EL3eqO.jpg"
+          alt="Rick Morty"
+        />
+      </a>
+      <a href="#characters"><p>Characters</p></a>
+      <nav>
+        <a href="https://github.com/Victoritalo/rickMortyApi" target="_blank"
+          >Repository</a
+        >
+      </nav>
+    </header>
+    <div class="logoRickMorty">
+      <img src="./assets/Rick_And_Morty_(2).png" alt="" />
+    </div>
+    <main id="characters" class="container">
+        <div class="character">
+            <img
+              src="https://rickandmortyapi.com/api/character/avatar/504.jpeg"
+              alt=""
+            />
+            <div class="characterInfo">
+              <h2>Fascist Shrimp Rick’s Cloneeeeeeeeeeeeeeeee</h2>
+              <div class="status">
+                <div class="statusView"></div>
+                <p>Dead - Alien</p>
+              </div>
+              <p class="known_seen">Last known location:</p>
+              <p>Earth</p>
+              <p class="known_seen">First time seen in:</p>
+              <p>Earth</p>
+            </div>
+          </div>
+        </main>
+        <div class="btn">
+          <button>
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
