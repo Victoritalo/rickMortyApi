@@ -4,7 +4,8 @@ const footer = document.querySelector("footer");
 const statusView = document.querySelector(".statusView");
 const previousBtn = document.querySelector("#previousBtn");
 const nextBtn = document.querySelector("#nextBtn");
-let currentPage = 42;
+let randomPage = Math.floor(Math.random() * 42) + 1;
+let currentPage = randomPage;
 let totalOfPages = "";
 
 async function characters() {
@@ -47,17 +48,19 @@ async function characters() {
       main.innerHTML = character;
     }
   } catch (err) {
-    currentPage = totalOfPages;
-    alert(
-      `An issue occurred while attempting to navigate to the next page: ${err.response.status}: ${err.response.data.error} `
-    );
-    console.clear();
-    return;
+      currentPage = totalOfPages;
+      alert(
+          `An issue occurred: ${err.response.status} ${err.response.data.error} `
+          );
+          console.clear();
+          return;
   }
-  apiInfo();
+  footerInfo();
+  previousBtn.disabled = currentPage === 1;
+  nextBtn.disabled = (currentPage === totalOfPages);
 }
 
-async function apiInfo() {
+async function footerInfo() {
   const info = await axios.get(url + "character");
   const loc = await axios.get("https://rickandmortyapi.com/api/location");
   const location = loc.data.info;
