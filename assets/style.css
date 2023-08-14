@@ -50,6 +50,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 100%;
 }
 .container p {
   margin: 10px;
@@ -67,8 +68,13 @@ body {
   color: var(--text);
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s;
+  user-select: none;
 }
-
+.character:hover{
+  transform: scale(1.01);
+  cursor: pointer;
+}
 .character h2 {
   font-size: 22px;
   font-weight: bold;
@@ -111,7 +117,7 @@ body {
 }
 
 .btn button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   color: var(--textHover);
 }
 
