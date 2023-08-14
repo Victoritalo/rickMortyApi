@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <script src="https://kit.fontawesome.com/4d50fc5e66.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4d50fc5e66.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Rick & Morty API</title>
   </head>
   <body>
     <header class="siteHeader">
-      <a href="#" style="border: none">
+      <a href="" style="border: none">
         <img
           src="https://t4.ftcdn.net/jpg/05/19/70/81/360_F_519708159_DsoIN3KqstTSQZXkNcUNu4ZYb3EL3eqO.jpg"
           alt="Rick Morty"
@@ -28,33 +31,33 @@
       <img src="./assets/Rick_And_Morty_(2).png" alt="" />
     </div>
     <main id="characters" class="container">
-        <div class="character">
-            <img
-              src="https://rickandmortyapi.com/api/character/avatar/504.jpeg"
-              alt=""
-            />
-            <div class="characterInfo">
-              <h2>Fascist Shrimp Rick’s Cloneeeeeeeeeeeeeeeee</h2>
-              <div class="status">
-                <div class="statusView"></div>
-                <p>Dead - Alien</p>
-              </div>
-              <p class="known_seen">Last known location:</p>
-              <p>Earth</p>
-              <p class="known_seen">First time seen in:</p>
-              <p>Earth</p>
-            </div>
+      <div class="character">
+        <img
+          src="https://rickandmortyapi.com/api/character/avatar/504.jpeg"
+          alt=""
+        />
+        <div class="characterInfo">
+          <h2>Fascist Shrimp Rick’s Cloneeeeeeeeeeeeeeeee</h2>
+          <div class="status">
+            <div class="statusView"></div>
+            <p>Dead - Alien</p>
           </div>
-        </main>
-        <div class="btn">
-          <button>
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <p class="known_seen">Last known location:</p>
+          <p>Earth</p>
+          <p class="known_seen">First time seen in:</p>
+          <p>Earth</p>
         </div>
-        <footer></footer>
+      </div>
+    </main>
+    <div class="btn">
+      <button id="previousBtn" onclick="previousPage()">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button class="nextBtn" onclick="nextPage()">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+    <footer></footer>
     <script src="./script.js"></script>
   </body>
 </html>

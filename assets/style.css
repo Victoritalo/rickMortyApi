@@ -12,7 +12,6 @@ html {
 }
 body {
   height: 100vh;
-  /* width: 100vw; */
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 .siteHeader img {
@@ -31,6 +30,7 @@ body {
   display: flex;
   align-items: center;
   color: var(--primary-text);
+  font-weight: bold;
   text-decoration: none;
   padding: 5px;
   border-bottom: 2px solid var(--textHover);
@@ -39,14 +39,12 @@ body {
 .siteHeader a:hover {
   color: var(--textHover);
   border-bottom: 2px solid var(--primary-text);
-  fill: red;
 }
 .logoRickMorty {
   text-align: center;
 }
 
 .container {
-  /* width: 100%; */
   background-color: var(--bg);
   display: flex;
   justify-content: center;
@@ -126,19 +124,19 @@ footer ul {
   display: flex;
   justify-content: space-around;
 }
-footer a {
+footer a, footer p{
   font-weight: bold;
   text-decoration: none;
   color: var(--textTwo);
   transition: 0.4s;
+  cursor: pointer;
 }
-footer a:hover {
+footer a:hover, footer p:hover {
   color: var(--textHover);
 }
 
 @media only screen and (max-width: 768px) {
-  
-  .logoRickMorty{
+  .logoRickMorty {
     display: none;
   }
 }
